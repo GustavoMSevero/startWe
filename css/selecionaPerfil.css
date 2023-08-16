@@ -1,0 +1,38 @@
+
+.container-fluid{
+    background-color: white;
+    height: 675px;
+}
+
+.caixaTexto{
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-bottom: 30px;
+}
+
+#textoSelecionaPerfil{
+    text-align: center;
+    font-size: 20px;
+}
+
+.botoes{
+
+}
+
+#botao1{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#botao2{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+}

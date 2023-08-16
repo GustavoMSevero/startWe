@@ -1,0 +1,47 @@
+.perfilParticipar{
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+#alertaParticipante{
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+}
+
+#nomeUsuario{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dadosPessoais{
+    margin-left: 20%;
+}
+
+.profissao{
+    margin-left: 20%;
+}
+
+.sobre{
+    margin-left: 20%;
+}
+
+.curriculo{
+    margin-left: 20%;
+}
+
+.cidade{
+    margin-left: 20%;
+}
+
+.estado{
+    margin-left: 20%;
+}
+
+.linkedin{
+    margin-left: 20%;
+}
+
+.btnCadParticipante{
+    margin-top: 20px;
+}

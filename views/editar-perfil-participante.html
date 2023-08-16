@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container editarPerfilParticipante" ng-controller="editarPerfilParticipanteCtrl">
+            <div class="row">
+                <div class="col-ms-12 col-md-12 tituloPerfilParticipar">
+                    <h2 id="tituloPerfilParticipar">Editar Perfil profissional</h2>
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-ms-6 col-md-6 dadosPessoais">
+                        <p>Dados pessoais</p>
+                        <div id="nomeUsuario">
+                            {{usuario}}
+                        </div>
+                        <input type="hidden" name="nome" ng-model="novoParticipante.idPerfilParticipante">
+                    </div>
+                    <div class="col-ms-6 col-md-6 profissao">
+                        <p>Profissão/Especialidade</p>
+                        <input class="form-control" type="text" name="profissao" ng-model="novoParticipante.profissao">
+                    </div>
+                    <div class="col-ms-6 col-md-6 sobre">
+                        <p>Sobre</p>
+                        <textarea class="form-control" name="sobre" id="" cols="30" rows="5" ng-model="novoParticipante.sobre" 
+                            placeholder="Engenheiro(a) com 16 anos de experiêcia…">
+                        </textarea>
+                    </div>
+                    <!-- <div class="col-ms-6 col-md-6 curriculo">
+                        <p>Currículo</p>
+                        <input type="file" name="curriculo" ng-click="uploadCurriculo()">
+                    </div> -->
+                    <div class="col-ms-6 col-md-6 cep">
+                        <p>CEP</p>
+                        <input class="form-control" id="cep" type="text" name="cep" ng-model="novoParticipante.cep">
+                    </div>
+                    <div class="col-ms-6 col-md-6 cidade">
+                        <p>Cidade</p>
+                        <input class="form-control" type="text" name="cidade" ng-model="novoParticipante.localidade">
+                    </div>
+                    <div class="col-ms-6 col-md-6 estado">
+                        <p>Estado</p>
+                        <!-- <input class="form-control" type="text" name="estado" ng-model="novoParticipante.uf"> -->
+                        <select class="form-control" name="estado" id="" class="selectEstado" ng-model="novoParticipante.uf" required>
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="col-ms-6 col-md-6 linkedin">
+                        <p>LinkedIn</p>
+                        <input class="form-control" type="text" name="linkedin" ng-model="novoParticipante.urlLinkedin" placeholder="https://www.linkedin.com/in/fulano-03ab9620/">
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block btnCadParticipante" ng-click="atuaizarParticipante(novoParticipante)">Atualizar</button>
+                <div id="btnVoltar">
+                    <a class="btn-lg btn-block btn-default" href="#/feed">Voltar</a>
+                </div>
+            </form>
+            
+        </div>
+
+
+    </body>
+</html>

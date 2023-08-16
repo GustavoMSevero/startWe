@@ -1,0 +1,204 @@
+
+.titulos{
+    /* margin-top: 10px; */
+    background-color: #3b3189;
+    height: 80px;
+}
+
+.feeds{
+    background-color: white;
+    height: 100%;
+}
+
+#startwe, #perfil{
+    display: inline-block;
+    width: 30%;
+}
+
+#startwe{
+    /* background-color: aquamarine; */
+    margin-top: 20px;
+    margin-left: 10%;
+    color: white;
+}
+
+#perfil{
+    /* background-color: beige; */
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 10%;
+    color: white;
+}
+
+
+
+
+
+
+.bgcolor{
+    /* background-color:  rgb(46, 197, 46); */
+    background-color: #3b3189;
+    width: 40%;
+    height: 370px;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+#fotoDono{
+    /* background-color: rgb(46, 197, 46); */
+    background-color: #3b3189;
+    padding-left: 20%;
+    margin-top: 10%;
+    height: 150px;
+    padding-top: 30px;
+    color: black;
+    border-radius: 15px;
+}
+
+#perfilUsuario{
+    width: 70%;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+
+#perfilParticiante{
+    width: 90%;
+    padding-left: 10%;
+    margin-top: 10px;
+}
+
+#perfilStartup{
+    width: 70%;
+    padding-left: 10%;
+    margin-top: 10px;
+    color: black;
+}
+
+#nomeDono{
+    /* background-color: green; */
+    padding-left: 10%;
+    margin-top: 10px;
+    /* color: black; */
+    color: white;
+}
+
+#labelNovaStartup{
+    padding-left: 10%;
+    margin-top: 10px;
+    color: black;
+}
+
+#notificacoes{
+    /* background-color: green; */
+    padding-left: 10%;
+    margin-top: 10px;
+    color: black;
+}
+
+#sair{
+    /* background-color: green; */
+    padding-left: 10%;
+    margin-top: 10px;
+}
+
+
+.ladoEsquerdo{
+    height: 100%;
+}
+
+.ladoDireito{
+    padding-left: 15%;
+}
+
+#logoStartup{
+    /* background-color: lightgray; */
+    padding-top: 5%;
+    margin-top: 2%;
+    height: 200px;
+    /* padding-left: 10%; */
+    width: 80%;
+}
+
+#nomeStartup{
+    margin-top: 20px;
+    color: black;
+    /* font-weight: bold; */
+    margin-left: -0.1%;
+    width: 50%;
+}
+
+#resumo{
+    color: black;
+    /* font-weight: bold; */
+}
+
+#buscamos{
+    color: black;
+    /* font-weight: bold; */
+}
+
+#pn{
+    font-weight: bold;
+}
+
+#ps{
+    font-weight: bold;
+}
+
+#btnCurtir, #btnComentar, #btnParticipar{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* #btnCurtir{
+    background-color: #3b3189;
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+} */
+
+#btnComentar{
+    background-color: #3b3189;
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    /* margin-left: 16%; */
+}
+
+#btnParticipar{
+    background-color: #3b3189;
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    /* margin-left: 5%; */
+}
+
+#linkCurtir{
+    color: white;
+}
+
+#linkComentar{
+    color: white;
+}
+
+#linkParticipar{
+    color: white;
+}
+
+.sair, .perfilUsuario, .perfilStartup, .notificacoes, .perfilParticiante, #qNotificacoes{
+    /* color: black; */
+    color: white;
+}
+
+#qNotificacoes{
+    padding-left: 5%;
+}
+
+.ladoEsquerdo{
+    height: 100%;
+}

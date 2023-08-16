@@ -1,0 +1,16 @@
+
+.exibeStartups{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#btnCadastrarStartup{
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#btnVoltarDaListagem{
+    margin-left: 40%;
+}

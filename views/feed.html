@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid feeds" ng-controller="feedCtrl">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 titulos">
+                    <h2 id="startwe">StartWe</h2>
+                    <a href="#/minhas-startups"><h2 id="perfil">Perfil Startup</h2></a>
+                    <!-- <a ng-if="checked" href="#/minhas-startups/{{idusuario}}"><h2 id="perfil">Perfil Startup</h2></a> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 col-md-4 ladoEsquerdo">
+                    <div class="bgcolor">
+                        <div id="fotoDono">
+                            <img src="{{ imagem }}" width="100" height="100" alt="imagem do dono">
+                        </div>
+                        <div id="perfilUsuario">
+                            <a class="perfilUsuario" href="#/editar-perfil-usuario/{{idusuario}}">Perfil usuário</a>
+                        </div>
+                        <div id="perfilParticiante">
+                            <a class="perfilParticiante" href="#/criar-perfil-participante">Perfil Participante</a>
+                        </div>
+                        <div id="nomeDono">
+                            Nome: <div id="usuario">{{usuario}}</div>
+                        </div>
+                        <div id="labelNovaStartup">
+                            <a class="perfilStartup" href="#/criar-nova-startup">Criar nova Startup</a>
+                        </div>
+                        <div id="notificacoes">
+                            <a class="notificacoes" href="#/minhas-notificacoes">Notificações: </a> <span id="qNotificacoes">{{quantidadeNotificacoes}}</span>
+                              
+                        </div>
+                        <div id="sair">
+                            <a class="sair" ng-href="#/" ng-click="sair()">Sair</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-8 col-md-8 ladoDireito">
+                    <div ng-repeat="s in startups">
+                        <div id="logoStartup" >
+                            <img height="150" width="150" alt="logo da startup" src="{{ s.logoStartup }}">
+                        </div>
+                        <div id="nomeStartup">
+                            <strong>Nome Startup:</strong> {{s.nomeStartup}}
+                        </div>
+                        <div id="resumo">
+                            <strong>Descrição (resumo):</strong> {{s.resumo}}
+                        </div>
+                        <div id="responsavel">
+                            <strong>Resposável:</strong> {{s.nomeResponsavel}}
+                        </div>
+                        <div id="buscamos">
+                            <strong>Buscamos...</strong>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td ng-show="{{s.nI}}"><strong>de Investimento:</strong> {{s.necessidadeInvestimento}}</td>
+                                </tr>
+                                <tr>
+                                    <td id="pn">Parceiro de Negócio:</td>
+                                    <td id="ps">Prestação de Serviço:</td>
+                                </tr>
+                                <tr>
+                                    <td ng-show="{{s.pnCom}}"><strong>Comercial</strong> {{s.pnComercial}}</td>
+                                    <td ng-show="{{s.psCom}}"><strong>Comercial</strong> {{s.psComercial}}</td>
+                                </tr>
+                                    <td ng-show="{{s.pnCon}}"><strong>Contábil:</strong> {{s.pnContabil}}</td>
+                                    <td ng-show="{{s.psCon}}"><strong>Contábil:</strong> {{s.psContabil}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnDese}}"><strong>Desenvolvedor:</strong> {{s.pnDesenvolvedor}}</td>
+                                    <td ng-show="{{s.psDese}}"><strong>Desenvolvedor:</strong> {{s.psDesenvolvedor}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnDesi}}"><strong>Designer:</strong> {{s.pnDesigner}}</td>
+                                    <td ng-show="{{s.psDesi}}"><strong>Designer:</strong> {{s.psDesigner}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnFin}}"><strong>Financeiro:</strong> {{s.pnFinanceiro}}</td>
+                                    <td ng-show="{{s.psFin}}"><strong>Financeiro:</strong> {{s.psFinanceiro}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnGes}}"><strong>Gestão:</strong> {{s.pnGestao}}</td>
+                                    <td ng-show="{{s.psGes}}"><strong>Gestão:</strong> {{s.psGestao}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnJur}}"><strong>Jurídico:</strong> {{s.pnJuridico}}</td>
+                                    <td ng-show="{{s.psJur}}"><strong>Jurídico:</strong> {{s.psJuridico}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnMar}}"><strong>Marketing:</strong> {{s.pnMarketing}}</td>
+                                    <td ng-show="{{s.psMar}}"><strong>Marketing:</strong> {{s.psMarketing}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnOut}}"><strong>Outro:</strong> {{s.pnOutro}}</td>
+                                    <td ng-show="{{s.psOut}}"><strong>Outro:</strong> {{s.psOutro}}</td>
+                                </tr>
+                                </tr>
+                                    <td ng-show="{{s.pnEsp}}"><strong>Especifique:</strong> {{s.pnEspecifique}}</td>
+                                    <td ng-show="{{s.psEsp}}"><strong>Especifique:</strong> {{s.psEspecifique}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Estágio:</strong> {{s.estagioStartup}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Problema:</strong> {{s.problema}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Solução:</strong> {{s.solucao}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Diferencial Inovativo:</strong> {{s.diferencial}}</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- <div id="btnCurtir">
+                            <a id="linkCurtir" href="#/">Curtir</a>
+                        </div> -->
+                        <!-- <div id="btnComentar">
+                            <a id="linkComentar" href="#/">Comentar</a>
+                        </div> -->
+                        <div id="btnParticipar">
+                            <a id="linkParticipar" href="#/participar/{{s.idusuario}}/{{s.nomeStartup}}/{{s.nomeResponsavel}}">Participar</a>
+                            <!-- <a id="linkParticipar" href="#/participar">Participar</a> -->
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

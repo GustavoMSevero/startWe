@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid cadastroPerfilStartup" ng-controller="criarNovaStartupCtrl">
+            <div class="row">
+                <div class="col-sm-16 col-md-16 tituloCadastroStartup">
+                    <h2 id="cadastroStartup">Cadastro de Startup</h2>
+                </div>
+            </div>
+
+            <form name="formPerfilStartup">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <p id="startup">Nome Startup</p>
+                        <input class="startup" type="text" name="nomeStartup" ng-model="perfilStartup.nomeStartup" required>
+                    </div>
+                    <div class="col-sm-6 col-md-6 ">
+                        <p id="descricao">Descriçãp (resumo)</p>
+                        <textarea name="resumo" cols="49" rows="5" ng-model="perfilStartup.resumo" 
+                        placeholder="Sou engenheiro elétrico a 10 anos..." required>
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p id="cidade">Cidade</p>
+                        <input class="campoCidade" type="text" id="localidade" name="localidade" ng-model="perfilStartup.localidade" required>
+                        <p id="estado">Estado</p>
+                        <!-- <input class="selectEstado" type="text" id="uf" name="uf" ng-model="perfilStartup.uf" required> -->
+                        <select name="uf" id="" class="selectEstado" ng-model="perfilStartup.uf" required>
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p id="qualNecessidade">Qual sua necessidade?</p>
+                        <div>
+                            <input class="qualNecessidade" type="checkbox" name="qualNessecidade" ng-model="perfilStartup.necessidadeInvestimento" id="" value="Investimento">Investimento
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 parceiros">
+                        <p id="parceiroNegocio">Parceiros de negócio</p>
+                        <div id="pnComercial">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnComercial"  id="" value="Comericla">Comercial
+                        </div>
+                        <div id="pnContabil">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnContabil" id="" value="Contábil">Contábil
+                        </div>
+                        <div id="pnDesenvolvedor">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnDesenvolvedor" id="" value="Desenvolvedor">Desenvolvedor
+                        </div>
+                        <div id="pnDesigner">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnDesigner" id="" value="Designer">Designer
+                        </div>
+                        <div id="pnFinanceiro">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnFinanceiro" id="" value="Financeiro">Financeiro
+                        </div>
+                        <div id="pnGestao">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnGestao" id="" value="Gestão">Gestão
+                        </div>
+                        <div id="pnJuridico">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnJuridico" id="" value="Jurídico">Jurídico
+                        </div>
+                        <div id="pnMarketing">
+                            <input type="checkbox" name="parceiroDeNegocio" ng-model="perfilStartup.pnMarketing" id="" value="Marketing">Marketing
+                        </div>
+                        <div id="pnOutro">
+                            <input type="checkbox" ng-model="perfilStartup.pnOutro" name="parceiroDeNegocio" id="" value="Outro">
+                            Outro (Especifique)<input type="text" name="parceiroDeNegocio" ng-model="perfilStartup.pnEspecifique" id="">
+                        </div>
+                    </div>
+  
+                    <div class="col-sm-6 col-md-6 prestacao">
+                        <p id="prestacaoServico">Prestação de serviço</p>
+                        <div id="psComercial">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psComercial" id="">Comercial
+                        </div>
+                        <div id="psContabil">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psContabil" id="">Contábil
+                        </div>
+                        <div id="psDesenvolvedor">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psDesenvolvedor" id="">Desenvolvedor
+                        </div>
+                        <div id="psDesigner">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psDesigner" id="">Designer
+                        </div>
+                        <div id="psFinanceiro">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psFinanceiro" id="">Financeiro
+                        </div>
+                        <div id="psGestao">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psgestao" id="">Gestão
+                        </div>
+                        <div id="psJuridico">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psJuridico" id="">Jurídico
+                        </div>
+                        <div id="psMarketing">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psMarketing" id="">Marketing
+                        </div>
+                        <div id="psOutro">
+                            <input type="checkbox" name="prestacaoDeServico" ng-model="perfilStartup.psOutro" value="Outro" id="">Outro (Especifique)
+                            <input type="text" name="prestacaoDeServico" ng-model="perfilStartup.psEspecifique" id="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 ">
+                        <p id="tituloEstagio">Estágio:</p>
+                        <div id="tituloMaturidade">
+                            <p>Selecione a maturidade de sua solução:</p>
+                        </div>
+                        <div id="estIdeia">
+                            <input type="radio" name="estagio" ng-model="perfilStartup.estagio" value="Ideia" ng-checked="true">
+                            Ideia: a proposta ainda é uma ideia, nenhum experimento foi feito.
+                        </div>
+                        <div id="estPrototipoConceitual">
+                            <input type="radio" name="estagio" ng-model="perfilStartup.estagio" value="Protótipo conceitual">
+                            Protótipo conceitual: produto foi elaborado no papel ou computador.
+                        </div>
+                        <div id="estPrototipoTestado">
+                            <input type="radio" name="estagio" ng-model="perfilStartup.estagio" value="Protótipo Testado">
+                            Protótipo testado: experimentos e testes foram realizados e demonstraram consistência.
+                        </div>
+                        <div id="estMVPFinalizado">
+                            <input type="radio" name="estagio" ng-model="perfilStartup.estagio" value="MVP finalizado">
+                            MVP finalizado: produto foi elaborado na sua primeira versão e mostrou viabilidade técnica e econômica.
+                        </div>
+                        <div id="estProdutoComercializacao">
+                            <input type="radio" name="estagio" ng-model="perfilStartup.estagio" value="Produto em comercialização">
+                            Produto em comercialização: produto já está inserido no mercado.
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <p id="problema">O problema:</p>
+                        <textarea name="problema" ng-model="perfilStartup.problema" id="" cols="50" rows="5"></textarea>
+                        <p id="solucao">A solução:</p>
+                        <textarea namesolucao ng-model="perfilStartup.solucao" id="" cols="50" rows="5"></textarea>
+                        <p id="diferencial">Diferencial inovativo:</p>
+                        <textarea namediferencial ng-model="perfilStartup.diferencial" id="" cols="50" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block btnCadastrarStartup" ng-click="cadastrarPerfilStartup(perfilStartup)">Cadastrar</button>
+                <div>
+                    <a class="btn btn-default btn-block" href="#/feed">Voltar</a>
+                </div>
+            </form>
+            
+        </div>
+
+
+    </body>
+</html>

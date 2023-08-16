@@ -1,0 +1,88 @@
+
+<div class="container-fluid editarPerfilParticipante">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 titulos">
+            <h2 id="editarPerfilUsuario">Editar Perfil Usuário</h2>
+        </div>
+    </div>
+    <div class="col" ng-controller="editarPerfilUsuarioCtrl">
+        <form name="form">
+            <div class="form-row">
+                <div class="form-group col-md-12 col-sm-12">
+                    <div id="tituloFoto">
+                        <label for="doc">Foto do usuário</label>
+                    </div>
+                    <div id="foto">
+                        <img src="{{ imagem }}" width="100" height="100" alt="imagem do dono" srcset="">
+                    </div>
+                    <div id="inputFoto">
+                        <button type="button" ng-click="uploadFoto()">Selecionar foto</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="doc">CPF</label>
+                    <input type="text" class="form-control" ng-model="newUser.cpf" placeholder="___.___.___-__" id="doc">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="feFirstName">Sexo</label>
+                    <select name="sexo" class="form-control" ng-model="newUser.sexo" id="">
+                        <option value="">Sexo...</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outros</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="feInputAddress">Data de nascimento</label>
+                    <input type="text" class="form-control" ng-model="newUser.dataNascimento" id="feInputAddress" placeholder="__/__/____">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="number">Cidade</label>
+                    <input type="text" class="form-control" ng-model="newUser.cidade" id="">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="number">E-mail</label>
+                    <input type="text" class="form-control" ng-model="newUser.email" id="">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="number">Usuário</label>
+                    <input type="text" class="form-control" ng-model="newUser.usuario" id="">
+                </div>
+            </div>
+            <!-- <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="number">Senha</label>
+                    <input type="password" class="form-control" ng-model="newUser.senha" id="">
+                    <label for="number">nova Senha <div id="avisoSenha">(deixo o campo em braco caso queira manter a senha)</div></label>
+                    <input type="password" class="form-control" ng-model="newUser.senha" id="">
+                </div>
+            </div> -->
+            <div id="msg">
+                {{msg}}
+            </div>
+            <div class="form-group col-sm-12 col-md-12">
+                <div id="btnAtulizarUsuario">
+                    <button class="btn-lg btn-success btnAtulizarUsuario" ng-click="updateUser(newUser)">Atualizar</button>
+                </div>
+                <div id="linkAtulizarProfissional">
+                    <a ng-if="checked" class="btn-lg btn-primary linkAtulizarProfissional" href="#/editar-perfil-participante" >Atualizar Perfil Profissional</a>
+                </div>
+            </div>
+        </form>
+        <div class="form-group col-md-6">
+            <a class="btn-lg btn-default" href="#/feed">Voltar</a>
+        </div>
+    </div>
+
+</div>
+ 

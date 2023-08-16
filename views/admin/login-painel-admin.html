@@ -1,0 +1,48 @@
+
+<div class="hk-wrapper">
+    <div class="hk-pg-wrapper hk-auth-wrapper">
+        <div class="container-fluid formLogin">
+            <div class="row">
+                <div class="col-xl-5 pa-0">
+                    <div id="owl_demo_1" class="owl-carousel dots-on-item owl-theme">
+                        <div class="fadeOut item auth-cover-img overlay-wrap" style="background-image:url(dist/img/bg2.jpg);">
+                            <div class="auth-cover-info py-xl-0 pt-100 pb-50">
+                                <div class="auth-cover-content text-center w-xxl-75 w-sm-90 w-xs-100">
+                                    <img src="./images/avatars/logo-startwe-novo.png" height="400" width="450" alt="logo startwe">
+                                    
+                                </div>
+                            </div>
+                            <div class="bg-overlay bg-trans-dark-80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 pa-0">
+                    <div class="auth-form-wrap py-xl-0 py-50">
+                        <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-xs-100">
+                            <div class="tituloPainel">
+                                <h3>Painel Admin</h3>
+                            </div>
+                            <form ng-controller="loginPainelAdminCtrl">
+                                <div class="form-group">
+                                    <input class="form-control" ng-model="user.email" placeholder="Login ou e-mail" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" ng-model="user.password" placeholder="Senha" type="password">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><span class="feather-icon"><i data-feather="eye-off"></i></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                      
+                                <button class="btn btn-primary btn-block" ng-click="loginAdmin(user)">Acessar</button>
+                                <a class="btn btn-default btn-block" href="#/" >Voltar</a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

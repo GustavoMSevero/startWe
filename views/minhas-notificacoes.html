@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid listagemNotificacoes" ng-controller="minhasNotificacoesCtrl">
+            <div class="row">
+                <div class="col-sm-16 col-md-16 tituloNotificacoes">
+                    <h2 id="tituloNot">Minhas Notificações</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="btnVoltarNotificacoes">
+                    <a class="btn btn-default btn-block" href="#/feed">Voltar</a>
+                </div>
+                <table class="table table-striped exibeNotificacoes">
+                    <tbody>
+                        <tr ng-repeat="n in notificacoes">
+                            <td>De: <a href="#/ver-perfil/{{n.idusuarioInteressado}}">{{n.nomeRemetente}}</a></td>
+                            <!-- <td>De: <a href="#/ver-perfil/{{n.idusuarioInteressado}}">{{n.usuarioInteressado}}</a></td> -->
+                            <td>{{n.mensagem}}</td>
+                            <td><a href="#/responder/{{n.idusuarioInteressado}}/{{n.idusuarioNotificado}}">Responder</a</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

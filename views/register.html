@@ -1,0 +1,92 @@
+
+<div class="hk-wrapper">
+    <div class="hk-pg-wrapper hk-auth-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 pa-0">
+                    <div id="owl_demo_1" class="owl-carousel dots-on-item owl-theme">
+                        <div class="fadeOut item auth-cover-img overlay-wrap" style="background-image:url(dist/img/bg2.jpg);">
+                            <div class="auth-cover-info py-xl-0 pt-100 pb-50">
+                                <div class="auth-cover-content text-center w-xxl-75 w-sm-90 w-xs-100">
+                                    <img src="./images/avatars/logo-startwe-novo2.png" height="245" width="400" alt="logo startwe">
+                                </div>
+                            </div>
+                            <div class="bg-overlay bg-trans-dark-80"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-7 pa-0">
+                    <div class="auth-form-wrap py-xl-0 py-50">
+                        <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-xs-100">
+         
+                            <div class="col" ng-controller="registerCtrl">
+                                <form name="formUnidade">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="cpf">CPF</label>
+                                            <input type="text" class="form-control" ng-model="user.cpf" id="cpf" ui-br-cpf-mask>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="feFirstName">Sexo</label>
+                                            <select name="sexo" class="form-control" ng-model="user.sexo" id="">
+                                                <option value="">Sexo...</option>
+                                                <option value="M">Masculino</option>
+                                                <option value="F">Feminino</option>
+                                                <option value="O">Outros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="feInputAddress">Data de nascimento</label>
+                                            <input type="text" class="form-control" ng-model="user.dataNascimento" id="feInputAddress" ui-date-mask>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label for="number">Cidade</label>
+                                            <input type="text" class="form-control" ng-model="user.cidade" id="">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="number">E-mail</label>
+                                            <input type="text" class="form-control" ng-model="user.email" id="">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="number">Nome Completo / Usuário</label>
+                                            <input type="text" class="form-control" ng-model="user.usuario" id="">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="number">Senha</label>
+                                            <input type="password" class="form-control" ng-model="user.password" id="" 
+                                                placeholder="Nome responsável da user">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="number">Confirmação de senha</label>
+                                            <input type="password" class="form-control" ng-model="user.confirPassword" id="">
+                                        </div>
+                                    </div>
+                                    <div id="alertaCadastro">
+                                        {{alerta}}
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <button class="btn-lg btn-success" ng-click="createUser(user)">Entrar</button>
+                                    </div>
+                                </form>
+                                <div class="form-group col-md-6">
+                                    <a class="btn-lg btn-default" href="#/">Voltar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

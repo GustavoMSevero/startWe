@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid cadastroPerfilStartup" ng-controller="minhasStartupsCtrl">
+            <div class="row">
+                <div class="col-sm-16 col-md-16 tituloCadastroStartup">
+                    <h2 id="cadastroStartup">Minhas Startups</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="btnCadastrarStartup">
+                    <a class="btn btn-success btn-block" href="#/criar-nova-startup">Cadastrar Startup</a>
+                </div>
+                <div id="btnVoltarDaListagem">
+                    <a class="btn btn-default btn-block" href="#/feed">Voltar</a>
+                </div>
+                <table class="table table-striped exibeStartups">
+                    <tbody>
+                        <tr ng-repeat="s in startups">
+                            <td>Nome: <a href="#/editar-perfil-startup/{{s.idstartup}}">{{s.nomeStartup}}</a></td>
+                            <td>ID: {{s.idstartup}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

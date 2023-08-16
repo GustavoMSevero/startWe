@@ -1,0 +1,27 @@
+.verPerfilParticipante{
+    margin-left: 20%;
+    height: 100%;
+    background-color: white;
+    width: 70%;
+}
+
+.tituloVerPerfilParticipante{
+    background-color: #3b3189;
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+}
+
+#tituloPerfilParticipar{
+    color: white;
+    /* width: 70%; */
+}
+
+.cep{
+    margin-left: 20%;
+}
+
+#btnVoltar{
+    text-align: center;
+    margin-top: 20px;
+}

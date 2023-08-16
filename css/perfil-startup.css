@@ -1,0 +1,84 @@
+.cadastroPerfilStartup{
+    height: 100%;
+}
+
+.tituloCadastroStartup{
+    background-color: #3b3189;
+    margin-left: 20%;
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+#cadastroStartup{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+.perfilStartup{
+    margin-top: 20px;
+}
+
+.startup{
+    width: 30%;
+    margin-left: 20%;
+}
+
+#nomeResponsavel{
+    margin-top: 20px;
+    margin-left: 110%;
+}
+
+.descricaoResumo{
+    margin-top: 20px;
+    margin-left: 21%;
+}
+
+.perguntas{
+    margin-top: 60px;
+    margin-left: 20%;
+    font-weight: bold;
+}
+
+#necessidade{
+    margin-bottom: 20px;
+}
+
+#prestacaoServico{
+    margin-top: 20px;
+}
+
+.estagio{
+    margin-left: 20%;
+}
+
+#labelEstagio{
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.btnCadastrarStartup{
+    margin-top: 20px;
+}
+
+.problemaSolucaoDiferencial{
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+#labelProblema{
+    font-weight: bold;
+    color: black;
+}
+
+#labelSolucao{
+    font-weight: bold;
+    color: black;
+}
+
+#labelDiferencial{
+    font-weight: bold;
+    color: black;
+}

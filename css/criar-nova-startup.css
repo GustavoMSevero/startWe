@@ -1,0 +1,284 @@
+.cadastroPerfilNovaStartup{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+}
+
+.tituloCadastroStartup{
+    background-color: #3b3189;
+    margin-left: 20%;
+    height: 50px;
+    width: 60%;
+}
+
+#cadastroStartup{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+#labelNomeResponsavel{
+    margin-top: 20;
+    margin-left: 20%;
+}
+
+#labelResponsavel{
+    margin-top: 20;
+    margin-left: 20%;
+}
+
+.campoResponsavel{
+    margin-left: 20%;
+}
+
+#labelCep{
+    margin-top: 20;
+    margin-left: 20%;
+}
+
+.cidade{
+    margin-left: 20%;
+}
+
+.estado{
+    margin-left: 20%;
+}
+
+#startup{
+    padding-top: 10px;
+    width: 50%;
+    margin-left: 40.8%;
+    height: 20px;
+}
+
+.startup{
+    margin-left: 40.8%;
+    width: 50%;
+    margin-top: 10px;
+}
+
+#descricao{
+    padding-top: 10px;
+    width: 50%;
+}
+
+#nomeNovaStartup{
+    margin-left: 40%;
+}
+
+#labelCEP{
+    margin-left: 20%;
+}
+
+#cidade{
+    width: 10%;
+    margin-left: 20%;
+}
+
+.campoCep{
+    margin-left: 20%;
+}
+
+.campoCidade{
+    margin-left: 20%;
+    width: 24%;
+}
+
+.campoEstado{
+    margin-left: 20%;
+    width: 24%;
+}
+
+#estado{
+    width: 10%;
+    margin-left: 20%;
+
+}
+
+.selectEstado{
+    margin-left: 20%;
+    width: 24%;
+}
+
+#qualNecessidade{
+    width: 15%;
+    margin-left: 20%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.qualNecessidade{
+    margin-left: 20%;
+}
+
+#parceiroNegocio{
+    width: 30%;
+    margin-left: 41%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#pnComercial{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnContabil{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnDesenvolvedor{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnDesigner{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnFinanceiro{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnGestao{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnJuridico{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnMarketing{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+#pnOutro{
+    /* background-color: white; */
+    width: 30%;
+    margin-left: 41%;
+}
+
+.parceiros, .prestacao{
+    display: inline-block;
+}
+
+#prestacaoServico{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#psComercial{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psContabil{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psDesenvolvedor{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psDesigner{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psFinanceiro{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psGestao{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psJuridico{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psMarketing{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+#psOutro{
+    /* background-color: white; */
+    width: 30%;
+    /* margin-left: 41%; */
+}
+
+.estagio, .perguntas{
+    display: inline-block;
+}
+
+#tituloEstagio{
+    margin-top: 10px;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 41%;
+}
+
+#tituloMaturidade{
+    font-weight: bold;
+    width: 50%;
+    margin-left: 41%;
+}
+
+#estIdeia{
+    /* background-color: white; */
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+
+#estPrototipoConceitual{
+    /* background-color: white; */
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+
+#estPrototipoTestado{
+    /* background-color: white; */
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+
+#estMVPFinalizado{
+    /* background-color: white; */
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+
+#estProdutoComercializacao{
+    /* background-color: white; */
+    margin-left: 41%;
+}
+
+
+#problema{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#solucao{
+    font-weight: bold;
+}
+
+#diferencial{
+    font-weight: bold;
+}
+
+.btnCadastrarStartup{
+    margin-top: 10px;
+}

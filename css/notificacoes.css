@@ -1,0 +1,27 @@
+.listagemNotificacoes{
+    height: 100%;
+}
+
+.tituloNotificacoes{
+    background-color: #3b3189;
+    margin-left: 20%;
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+#tituloNot{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+#btnVoltarNotificacoes{
+    margin-left: 70%;
+}
+
+.exibeNotificacoes{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}

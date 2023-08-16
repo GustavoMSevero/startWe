@@ -1,0 +1,32 @@
+.participar{
+    height: 590px;
+}
+
+.tituloParticipar{
+    background-color: #3b3189;
+    margin-left: 20%;
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+#tituloParticipar{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+.aviso{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mensagem{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#mensagemDeEmail{
+    margin-top: 20px;;
+    font-weight: bold;
+}

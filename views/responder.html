@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid participar" ng-controller="responderCtrl">
+            <div class="row">
+                <div class="col-sm-16 col-md-16 tituloParticipar">
+                    <h2 id="tituloParticipar">Responder</h2>
+                </div>
+            </div>
+            <div class="notificacaoMensagem">
+                <p><strong>Startup:</strong> {{resposta.startup}}</p>
+                <p><strong>De:</strong> {{resposta.nomeRemetente}}</p> 
+                <p><strong>Para:</strong> {{resposta.nomeDestinatario}}</p> 
+                <p><strong>Mensagem:</strong> {{resposta.mensagem}}</p>
+                <!-- {{ usuarioInteressado }} {{ emailUsuarioInteressado }} {{emailDonoStartup}} {{usuario}} -->
+            </div>
+
+            <div class="mensagem">
+                <form name="formResposta">
+                    <div>
+                        <input type="hidden" nome="destinatario" ng-model="resposta.nomeDestinatario" ng-value="resposta.nomeDestinatario">
+                        <input type="hidden" nome="remetente" ng-model="resposta.nomeRemetente" ng-value="Resposta.nomeRemetente">
+
+                        <input type="hidden" nome="idremetente" ng-model="resposta.idremetente" ng-value="resposta.idremetente">
+                        <input type="hidden" nome="iddestinatario" ng-model="resposta.iddestinatario" ng-value="resposta.iddestinatario">
+
+                        <input type="hidden" nome="interessado" ng-model="resposta.idusuarioInteressado" ng-value="resposta.idusuarioInteressado">
+                        <input type="hidden" nome="notificado" ng-model="resposta.idusuarioNotificado" ng-value="resposta.idusuarioNotificado">
+
+                        <input type="hidden" nome="usuarioInteressado" ng-model="resposta.usuarioInteressado" ng-value="resposta.usuarioInteressado">
+                        <input type="hidden" nome="responsavel" ng-model="resposta.responsavel" ng-value="resposta.responsavel">
+
+                        <input type="hidden" nome="emailUsuarioInteressado" ng-model="resposta.emailUsuarioInteressado" ng-value="resposta.emailUsuarioInteressado">
+                        <input type="hidden" nome="emailDonoStartup" ng-model="resposta.emailDonoStartup" ng-value="resposta.emailDonoStartup">
+
+                        <textarea name="" id="" cols="70" rows="10" placeholder="Deixe aqui sua mensagem……" ng-model="resposta.mensagemResposta" required>
+
+                        </textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" ng-disabled="formResposta.invalid" ng-click="responderMensagem(resposta)">Responder mensagem</button>
+                    </div>
+                    <div>
+                        <a class="btn btn-default btn-block" href="#/minhas-notificacoes">Voltar</a>
+                    </div>
+                    <div>
+                        {{msg}}
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

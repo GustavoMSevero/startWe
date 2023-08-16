@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="geo.region" content="Brasil">
+        <link href="https://gapps.com.br/" rel="canonical">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="...">
+        <meta name="description" content="Domanda System Aplication">
+
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Bootstrap 4.1.3 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/forms.css">
+
+        <!-- Custom Buttons JS -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Title -->
+        <title>StartWe</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid perfilParticipante" ng-controller="perfilParticiparCtrl">
+            <div class="row">
+                <div class="col-ms-12 col-md-12 perfilParticipar">
+                    <h2>Perfil profissional</h2>
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-ms-6 col-md-6 dadosPessoais">
+                        <p>Dados pessoais</p>
+                        <div id="nomeUsuario">
+                            {{usuario}}
+                        </div>
+                        <!-- <input class="form-control" type="text" name="nome" ng-model="participante.nome" placeholder="Nome completo"> -->
+                    </div>
+                    <div class="col-ms-6 col-md-6 profissao">
+                        <p>Profissão/Especialidade</p>
+                        <input class="form-control" type="text" name="profissao" ng-model="participante.profissao">
+                    </div>
+                    <div class="col-ms-6 col-md-6 sobre">
+                        <p>Sobre</p>
+                        <textarea class="form-control" name="sobre" id="" cols="30" rows="5" ng-model="participante.sobre" 
+                            placeholder="Engenheiro(a) com 16 anos de experiêcia…">
+                        </textarea>
+                    </div>
+                    <!-- <div class="col-ms-6 col-md-6 curriculo">
+                        <p>Currículo</p>
+                        <input type="file" name="curriculo" ng-click="uploadCurriculo()">
+                    </div> -->
+                    <div class="col-ms-6 col-md-6 cidade">
+                        <p>Cidade</p>
+                        <input class="form-control" type="text" name="cidade" ng-model="participante.localidade">
+                    </div>
+                    <div class="col-ms-6 col-md-6 estado">
+                        <p>Estado</p>
+                        <!-- <input class="form-control" type="text" name="estado" ng-model="participante.estado"> -->
+                        <select name="uf" id="" ng-model="participante.uf">
+                            <option value="">Selecionar estado...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="col-ms-6 col-md-6 linkedin">
+                        <p>LinkedIn</p>
+                        <input class="form-control" type="text" name="linkedin" ng-model="participante.linkedin" placeholder="https://www.linkedin.com/in/fulano-03ab9620/">
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block btnCadParticipante" ng-click="cadastrarParticipante(participante)">Cadastrar</button>
+                <div id="alertaParticipante">
+                    {{msg}}
+                </div>
+            </form>
+            
+        </div>
+
+
+    </body>
+</html>

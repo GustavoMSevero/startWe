@@ -1,0 +1,73 @@
+
+.titulos{
+    /* margin-top: 10px; */
+    background-color: #3b3189;
+    height: 80px;
+}
+
+.painel-admin{
+    background-color: white;
+    height: 100%;
+}
+
+#startwe, #perfil{
+    display: inline-block;
+    width: 30%;
+}
+
+#startwe{
+    /* background-color: aquamarine; */
+    margin-top: 20px;
+    margin-left: 10%;
+    color: white;
+}
+
+#perfil{
+    /* background-color: beige; */
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 10%;
+    color: white;
+}
+
+#areaAdmin{
+    /* background-color: beige; */
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 10%;
+    color: white;
+}
+
+.numeros{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10%;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
+    width: 30%;
+}
+
+.exibeNumeroUsuarios{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.exibeNumeroStartups{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.exibeNumeroMensagens{
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.startups{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10%;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
+    width: 30%;
+}
